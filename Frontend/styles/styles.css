@@ -161,19 +161,27 @@ a:hover {
     box-sizing: border-box;
 }
 
+.show-professional {
+    display: block;
+}
+
+.hide-professional {
+    display: none;
+}
+
+.show-personal {
+    display: block;
+}
+
+.hide-personal {
+    display: none;
+}
+
 @media screen and (max-width:800px) {
     .professional{
         flex-direction: column;
-        width: 50%;
-        float: left;
-        box-sizing: border-box;
-        padding-right: 20px;
     }    
     .personal {
         flex-direction: column;
-        width: 50%;
-        float: left;
-        box-sizing: border-box;
-        padding-right: 20px;
     }
 }

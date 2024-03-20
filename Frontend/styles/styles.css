@@ -177,11 +177,13 @@ a:hover {
     display: none;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1000px) {
     .professional{
         flex-direction: column;
+        width: 100%;
     }    
     .personal {
         flex-direction: column;
+        width: 100%;
     }
 }

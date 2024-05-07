@@ -1,8 +1,37 @@
+/* Default Light Mode Colors */
+:root {
+  --background-color: #fff;
+  --text-color: #000;
+}
+
+/* Dark Mode Colors */
+[data-theme='dark'] {
+  --background-color: #424146;
+  --text-color: #fff;
+}
+
+.dark-mode-toggle {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.dark-mode-toggle img {
+  width: auto;
+  height: 35px;
+}
+
 /* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 .container {
@@ -15,7 +44,7 @@ body {
 .navbar {
   background-color: #333;
   color: #fff;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .navbar-brand {
@@ -25,6 +54,8 @@ body {
 
 .navbar-nav {
   margin-left: auto;
+  display: flex;
+  flex-direction: row;
 }
 
 .nav-item {
@@ -43,11 +74,28 @@ body {
 }
 
 /* Footer Styles */
+
 .footer {
   background-color: #333;
   color: #fff;
   text-align: center;
   padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+.footer-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-link{
+  color:#fff;
+  text-decoration: none;
+  padding: 10px;
+  justify-content: center;
 }
 
 /* Top Navigation Styles */
@@ -78,16 +126,25 @@ body {
 
 /* Page Body Styles */
 .page-body {
-  background-color: #424146;
+  background-color: var(--background-color);
 }
 
+.col-md-4{
+  justify-content: center;
+}
+
+.img-fluid {
+  display:flex;
+  height: auto;
+  width: 20%;
+}
 /* Content Styles */
 .content {
   padding: 5% 15%;
   display: flex;
   flex-direction: column;
   background-color: #919191;
-  color: white;
+  color: var(--text-color);
   font-size: larger;
 }
 
@@ -155,9 +212,8 @@ body {
 
 .project-info {
   text-align: center;
-  color: white;
+  color: var(--text-color);
 }
-
 
 /* Responsive Styles */
 @media screen and (min-width: 600px) {

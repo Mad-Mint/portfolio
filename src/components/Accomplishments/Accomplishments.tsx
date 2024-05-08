@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'
+import './accomplishments.css'
 
 const gym = require('../../images/gym.mp4')
 

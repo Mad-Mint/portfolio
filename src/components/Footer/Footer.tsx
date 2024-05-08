@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import './styles.css'
+import './footer.css'
 
 interface ExternalLinkProps {
   to: string;

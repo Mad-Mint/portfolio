@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './styles.css'
+import './darkmodetoggle.css'
 
 const lightModeImg = require('../../images/lightmode.png');
 const darkModeImg = require('../../images/darkmode.png');

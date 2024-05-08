@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './styles.css'
+import './projects.css'
 
 const UNL = require('../../images/UNL.jpg')
 const OpenECUs = require('../../images/OpenECUs.jpg')

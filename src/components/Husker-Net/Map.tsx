@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import './styles.css';
+import './map.css';
 
 
 const LincolnMap: React.FC = () => {

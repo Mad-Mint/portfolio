@@ -1,9 +1,10 @@
 import React from 'react';
+import './styles.css';
 
 const DMSiAutomatedWarehouseInventory = () => {
   return (
     <div className="dmsi-automated-warehouse-inventory"> {/* Applying a class name */}
-      <h3>DMSi Automated Warehouse Inventory</h3>
+      <h1>DMSi Automated Warehouse Inventory</h1>
       <h5>
         My Senior Design team was tasked with automating the inventory of a lumber warehouse.
         We proposed the solution of tracking individual lumber bundle movements. To accomplish this, 

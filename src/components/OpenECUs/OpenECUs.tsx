@@ -4,7 +4,7 @@ import CodeEditor from './CodeEditor';
 const OpenECUs = () => {
   return (
     <div className="open-ecus-container"> {/* Applying a class name */}
-      <h2>OpenECUs Project</h2>
+      <h1>OpenECUs</h1>
       <p>
         The OpenECUs project aims to provide a platform for accessing and modifying Electronic Control Units (ECUs) in vehicles, 
         including GM ECUs. One common task is turning off the Vehicle Anti-Theft System (VATS) for engine swap purposes.

@@ -1,11 +1,14 @@
 import React from 'react';
+import './styles.css'
+
+const gym = require('../../images/gym.mp4')
 
 const Accomplishments = () => {
   return (
     <div className="page-body">
       <div className="content">
-        <video id="video" width="480" height="854" controls>
-          <source src="../../../images/gym.mp4" type="video/mp4" />
+        <video id="video" controls>
+          <source src={gym} type="video/mp4" />
         </video>
       </div>
     </div>

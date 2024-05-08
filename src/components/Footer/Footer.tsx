@@ -1,17 +1,30 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { ReactNode } from 'react';
+import './styles.css'
 
-const Footer = () => {
+interface ExternalLinkProps {
+  to: string;
+  children: ReactNode;
+}
+
+const ExternalLink: React.FC<ExternalLinkProps> = ({ to, children }) => {
+  return (
+    <a href={to} target="_blank" rel="noopener noreferrer" className="footer-link">
+      {children}
+    </a>
+  );
+};
+
+const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <nav>
         <div className="footer-nav">
-          <div><Link to="https://www.linkedin.com/in/shayne-mintling/" className="footer-link">LinkedIn</Link></div>
-          <div><Link to="https://github.com/Mad-Mint" className="footer-link">GitHub</Link></div>
+          <div><ExternalLink to="https://www.linkedin.com/in/shayne-mintling/">LinkedIn</ExternalLink></div>
+          <div><ExternalLink to="https://github.com/Mad-Mint">GitHub</ExternalLink></div>
         </div>
       </nav>
     </footer>
   );
-}
+};
 
 export default Footer;

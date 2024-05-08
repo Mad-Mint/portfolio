@@ -1,0 +1,27 @@
+/* Mobile-first styles */
+.map-container {
+  width: 100%;
+  height: 300px; /* Default height for mobile devices */
+}
+
+h1 {
+  padding: 0 30px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Responsive styles */
+@media screen and (min-width: 576px) {
+  .map-container {
+    height: 350px; /* Adjusted height for medium-sized screens */
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .map-container {
+    height: 400px; /* Adjusted height for larger screens */
+  }
+}

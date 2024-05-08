@@ -8,13 +8,13 @@ const ContactForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+  
     // Send email
-    emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', {
-      name,
-      email,
-      message,
-    }, 'YOUR_USER_ID')
+    emailjs.send('service_ii39t29', 'template_97iy9yh', {
+      from_name: name,
+      reply_to: email,
+      message: message,
+    }, 'Vukta3mYneNiXsfYW')
       .then(() => {
         alert('Email sent successfully!');
       })
@@ -22,7 +22,7 @@ const ContactForm = () => {
         console.error('Error sending email:', error);
         alert('An error occurred while sending email.');
       });
-
+  
     // Clear form fields
     setName('');
     setEmail('');

@@ -8,9 +8,32 @@ h1 {
   padding: 0 30px;
 }
 
+h3{
+  height: 30px;
+}
+
+p{
+  height:30px;
+}
+
 .map {
   width: 100%;
   height: 100%;
+}
+
+.locations{
+  display: flex;
+  justify-content: space-around;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.close-button{
+  width: 100%;
 }
 
 /* Responsive styles */

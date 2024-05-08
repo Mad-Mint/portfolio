@@ -57,22 +57,21 @@ const LincolnMap: React.FC = () => {
       <div id="map" className="map"></div>
       {sidebarOpen && (
         <div className="sidebar">
-          <button className="close-button" onClick={closeSidebar}>
-            Close Sidebar
-          </button>
-          <div>
-            <h3>Clicked Location:</h3>
-            <p>Latitude: {clickedLocation?.lat}</p>
-            <p>Longitude: {clickedLocation?.lng}</p>
-            <p>Predicted RSRP:</p>
-            <p>{predictedRSRP}</p>
+          <div className="locations">
+            <div className='location'>
+              <h3>Clicked Location:</h3>
+              <p>Latitude: {clickedLocation?.lat}</p>
+              <p>Longitude: {clickedLocation?.lng}</p>
+              <p>Predicted RSRP:{predictedRSRP}</p>
+            </div>
+            <div className='location'>
+              <h3>Closest Location in the Dataset:</h3>
+              <p>Latitude: {closestLocation?.lat}</p>
+              <p>Longitude: {closestLocation?.lng}</p>
+              <p>RSRP for closest location: {closestLocation?.rsrp}</p>
+            </div>
           </div>
-          <div>
-            <h3>Closest Location in the Dataset:</h3>
-            <p>Latitude: {closestLocation?.lat}</p>
-            <p>Longitude: {closestLocation?.lng}</p>
-            <p>RSRP for closest location: {closestLocation?.rsrp}</p>
-          </div>
+          <button className="close-button" onClick={closeSidebar}>Close</button>
         </div>
       )}
     </div>

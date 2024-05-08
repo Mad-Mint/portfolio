@@ -31,8 +31,8 @@ const App = () => {
               <Route path='/dmsi' element={<DMSiAutomatedWarehouseInventory/>} />
               <Route path='/openecus' element={<OpenECUs/>}/>
             </Routes>
-          {isMobile() ? (<HamburgerHeader/>) : (<DesktopHeader/>)}
           </div>
+          {isMobile() ? (<HamburgerHeader/>) : (<DesktopHeader/>)}
         <Footer />
     </Router>
   );

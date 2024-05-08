@@ -1,5 +1,5 @@
 import React from 'react';
-import './styles.css'
+import './aboutme.css'
 
 const pdf = require('./Resume_Shayne_Mintling.pdf');
 

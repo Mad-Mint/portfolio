@@ -16,7 +16,7 @@ import './App.css'
 
 const App = () => {
   const isMobile = () => {
-    return window.innerWidth <= 412; // Adjust this breakpoint as needed
+    return window.innerWidth <= 576; // Adjust this breakpoint as needed
   };
   return (
     <Router>

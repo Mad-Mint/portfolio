@@ -30,6 +30,9 @@ p{
   display: flex;
   flex-direction: column;
   width: 200px;
+  @media screen and (min-width:576px) {
+    width:400px;
+  }
 }
 
 .close-button{
